@@ -1,0 +1,44 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(21, 21, 21);
+	font-family: 'Anton', sans-serif;
+	color: var(--text-color);
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../assets/grunge_bg.jpg');
+	background-size: cover;
+	background-position: center;
+	filter: brightness(8%);
+	z-index: -1;
+}
+
+#particles {
+    position: fixed;
+	inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.content-container {
+	width: 100%;
+	height: 96%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}

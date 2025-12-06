@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/assets/smile-plus-red.svg">
+	<link rel="stylesheet" href="styles/variables.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/logo.css">
+	<link rel="stylesheet" href="styles/invitation.css">
+	<link rel="stylesheet" href="styles/timer.css">
+	<link rel="stylesheet" href="styles/mute_button.css">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<title>Invitation</title>
+</head>
+<body>
+	<div id="particles"></div>
+	<div class="bg"></div>
+	<button id="mute-btn">
+		<img id="mute-icon" src="assets/volume-on-white.svg" alt="on">
+	</button>
+	<div class="content-container">
+		<div class="logo-container">
+			<div class="logo-bg"></div>
+			<p class="logo" id="logo-back">40</p>
+			<p class="logo" id="logo-front">TURNING</p>
+		</div>
+		<div class="invitation-container">
+			<div class="invitation">
+				You are officially invited to participate in the decennial event of celebrating old man Nona
+			</div>
+			<div class="time">
+				Date : <span class="highlight">20.12.2025</span><br>
+				Start : <span class="highlight">13.00</span><br>
+				Location : <span class="highlight">Nona's home</span><br>
+			</div>
+		</div>
+		<div class="timer-container">
+			<div class="timer">
+				<div class="box days">
+					<p class="label">DAYS</p>
+					<p class="value" id="days">00</p>
+				</div>
+				<div class="box hours">
+					<p class="label">HOURS</p>
+					<p class="value" id="hours">00</p>
+				</div>
+				<div class="box minutes">
+					<p class="label">MIN</p>
+					<p class="value" id="minutes">00</p>
+				</div>
+				<div class="box seconds">
+					<p class="label">SEC</p>
+					<p class="value" id="seconds">00</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<audio id="bg-music" src="audio/Aylex-EpicMotivation.mp3"></audio>
+	<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.11/dist/tsparticles.min.js"></script>
+	<script src="scripts/time.js"></script>
+	<script src="scripts/audio.js"></script>
+	<script src="scripts/particles.js"></script>
+</body>
+</html>

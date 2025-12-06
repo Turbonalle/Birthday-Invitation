@@ -1,0 +1,9 @@
+:root {
+	--logotext-color: #d3d3d3;
+	--logonumber-color: #bf0000;
+	--text-color: #d3d3d3;
+	--highlight-color: #bf0000;
+	--border-color: #d3d3d3;
+
+	--border-thickness: 2px;
+}
