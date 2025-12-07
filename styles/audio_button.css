@@ -1,4 +1,4 @@
-#mute-btn {
+#audio-btn {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
@@ -14,12 +14,12 @@
 	transition: background 0.2s, transform 0.1s;
 }
 
-#mute-btn:hover {
+#audio-btn:hover {
 	background: rgba(0, 0, 0, 0.8);
 	transform: scale(1.1);
 }
 
-#mute-btn img {
+#audio-btn img {
 	width: 24px;
 	height: 24px;
 	display: block;

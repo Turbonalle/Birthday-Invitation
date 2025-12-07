@@ -1,19 +1,33 @@
 const audio = document.getElementById("bg-music");
-const muteBtn = document.getElementById("mute-btn");
-const muteIcon = document.getElementById("mute-icon");
+const audioBtn = document.getElementById("audio-btn");
+const audioIcon = document.getElementById("audio-icon");
+let isPlaying = false;
 
-window.addEventListener('click', () => {
+function updateIcon() {
+	audioIcon.src = audio.muted
+		? "assets/volume-off-white.svg"
+		: "assets/volume-on-white.svg";
+}
+
+audioBtn.addEventListener('click', () => {
 	if (!audio) {
 		console.log("No music found...");
 		return;
 	}
-	
-	audio.play().catch(err => console.log(err));
-}, { once: true });
 
-muteBtn.addEventListener("click", () => {
+	if (!isPlaying) {
+		audio.muted = false;
+		audio.play().catch(err => console.log(err));
+		isPlaying = true;
+		updateIcon();
+		return;
+	}
+	
 	audio.muted = !audio.muted;
-	muteIcon.src = audio.muted
-		? "../assets/volume-off-white.svg"
-		: "../assets/volume-on-white.svg";
+
+	if (!audio.muted) {
+		audio.play().catch(err => console.log(err))
+	}
+
+	updateIcon();
 });

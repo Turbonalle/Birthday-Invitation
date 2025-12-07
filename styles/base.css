@@ -1,9 +1,15 @@
+html {
+	color-scheme: only light;
+	forced-color-adjust: none;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 0;
+	padding: 0;
 	height: 100vh;
 	width: 100vw;
 	background-color: rgb(21, 21, 21);
@@ -11,7 +17,7 @@ body {
 	color: var(--text-color);
 }
 
-.bg {
+#bg {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -32,6 +38,14 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
+}
+
+#fullpage-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	z-index: -1;
 }
 
 .content-container {
