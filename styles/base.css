@@ -1,13 +1,6 @@
 html {
-	color-scheme: only light !important;
-	forced-color-adjust: none !important;
-}
-
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: light !important;
-        forced-color-adjust: none !important;
-    }
+	color-scheme: only light;
+	forced-color-adjust: none;
 }
 
 body {
