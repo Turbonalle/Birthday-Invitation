@@ -1,8 +1,6 @@
 html {
 	color-scheme: only light !important;
 	forced-color-adjust: none !important;
-	background-color: #000 !important;
-	color: #fff !important;
 }
 
 @media (prefers-color-scheme: dark) {
