@@ -1,5 +1,5 @@
 function setTime() {
-	const countDownTime = new Date("Dec 20, 2025 13:00:00").getTime();
+	const countDownTime = new Date("Dec 13, 2025 13:00:00").getTime();
 	const now = new Date().getTime();
 	const gap = countDownTime - now;
 
