@@ -1,6 +1,15 @@
 html {
-	color-scheme: only light;
-	forced-color-adjust: none;
+	color-scheme: only light !important;
+	forced-color-adjust: none !important;
+	background-color: #000 !important;
+	color: #fff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: light !important;
+        forced-color-adjust: none !important;
+    }
 }
 
 body {
@@ -26,7 +35,7 @@ body {
 	background-image: url('../assets/grunge_bg.jpg');
 	background-size: cover;
 	background-position: center;
-	filter: brightness(8%);
+	filter: brightness(9%);
 	z-index: -1;
 }
 

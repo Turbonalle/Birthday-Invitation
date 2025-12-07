@@ -18,7 +18,7 @@ function initParticles() {
 				straight: false,
 				outModes: { default: "out" }
 			},
-			opacity: { value: 0.3 },
+			opacity: { value: 0.2 },
 			shape: { type: "circle" }
 		},
 		interactivity: {
