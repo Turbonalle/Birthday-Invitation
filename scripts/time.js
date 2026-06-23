@@ -1,5 +1,18 @@
+let year = new Date().getFullYear();
+let years = year - 1985;
+
+function setDate() {
+	document.getElementById("logo-back").innerText = years;
+	if (years % 10 === 0) {
+		document.getElementById("annual-or-decennial").innerText = "decennial";
+	} else {
+		document.getElementById("annual-or-decennial").innerText = "annual";
+	}
+	document.getElementById("date").innerText = `16.12.${year}`;
+}
+
 function setTime() {
-	const countDownTime = new Date("Dec 13, 2025 13:00:00").getTime();
+	const countDownTime = new Date(`Dec 16, ${year} 16:00:00`).getTime();
 	const now = new Date().getTime();
 	const gap = countDownTime - now;
 
@@ -37,4 +50,5 @@ setInterval(function() {
 	setTime();
 }, 1000);
 
+setDate();
 setTime();
